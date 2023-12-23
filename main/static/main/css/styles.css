@@ -1,0 +1,68 @@
+.phones {
+    height: 100% !important;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.logo {
+    min-height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+.signin-card {
+    border: 1px solid #e3e3e3;
+}
+.submit-btn {
+    background-color: #4193EF !important;
+    color: white;
+    font-weight: 800 !important;
+    border: none;
+    border-radius: 7px !important;
+}
+
+.submit-btn:hover {
+    background-color: #3382db !important;
+    color: white;
+    font-weight: 800 !important;
+    border: none;
+    border-radius: 7px !important;
+}
+.or-signin-facebook {
+    font-size: 14px !important;
+    font-weight: 600;
+    color: #344780;
+}
+.forget-password {
+    font-size: 12px !important;
+    font-weight: 500;
+    color: #344780;
+}
+
+.has-account {
+    font-size: 14px !important;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: 1em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: 1em;
+  }

