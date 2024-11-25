@@ -1,4 +1,4 @@
-# 📚 Instagram Phishing Demo (Educational Purpose)
+# 📚 Instagram Phishing
 
 **Warning**: This project is a **demonstration** of phishing techniques, created **solely for educational purposes**. It is designed to help students and developers understand how phishing attacks work and how to protect against them. **This project is not intended for malicious use**.
 
